@@ -9,9 +9,9 @@
             - python3-PyMySQL
         state: latest
 
-    # - name: start mariadb
-    #   become: yes  
-    #   command: systemctl start mariadb
+    - name: start mariadb
+      become: yes  
+      command: systemctl start mariadb
 
     - name: enable mariadb
       become: yes
